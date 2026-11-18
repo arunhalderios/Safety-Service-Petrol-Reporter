@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Safety service Patrol Reporter' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+ pod "IQKeyboardManagerSwift"
+ pod 'Alamofire', '~> 4.7'
+ pod 'Kingfisher', '~> 4.0'
+ pod 'DropDown'
+ pod 'Firebase/Analytics'
+ pod 'Firebase/Messaging'
+ pod 'Firebase/Crashlytics'
+ pod 'RSSelectionMenu', '~> 7.1.2'
+ pod 'SwiftyJSON'
+ pod 'AutoLogout'
+
+  # Pods for Safety service Patrol Reporter
+
+end

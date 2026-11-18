@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomActivityIndicator" customModule="ATIMS" customModuleProvider="target">
+            <connections>
+                <outlet property="lblProgress" destination="CTh-pa-Cau" id="fvX-qM-hbP"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Kfi-Qw-myV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZC-om-ump" customClass="CustomView" customModule="ATIMS" customModuleProvider="target">
+                    <rect key="frame" x="38.5" y="208" width="243" height="64"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="68Y-Wn-UuR">
+                            <rect key="frame" x="32.5" y="22" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="6et-3X-57G"/>
+                                <constraint firstAttribute="height" constant="20" id="hzF-ws-bIb"/>
+                            </constraints>
+                            <color key="color" name="AppThemeColor"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfL-JI-mGG">
+                            <rect key="frame" x="63" y="21.5" width="61" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="kfL-JI-mGG" firstAttribute="leading" secondItem="68Y-Wn-UuR" secondAttribute="trailing" multiplier="1.2" id="Dhn-kP-k4N"/>
+                        <constraint firstItem="kfL-JI-mGG" firstAttribute="centerY" secondItem="68Y-Wn-UuR" secondAttribute="centerY" id="FL5-m6-Y2X"/>
+                        <constraint firstAttribute="width" secondItem="dZC-om-ump" secondAttribute="height" multiplier="243:64" id="PmV-tZ-oYq"/>
+                        <constraint firstItem="68Y-Wn-UuR" firstAttribute="centerY" secondItem="dZC-om-ump" secondAttribute="centerY" id="UFs-nK-c3H"/>
+                        <constraint firstItem="68Y-Wn-UuR" firstAttribute="centerX" secondItem="dZC-om-ump" secondAttribute="centerX" multiplier="0.35" id="j4c-FY-uK1"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(0%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTh-pa-Cau">
+                    <rect key="frame" x="167.5" y="229.5" width="36.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.14670444542253522" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="CTh-pa-Cau" firstAttribute="centerY" secondItem="kfL-JI-mGG" secondAttribute="centerY" id="FOH-wK-QeG"/>
+                <constraint firstItem="CTh-pa-Cau" firstAttribute="leading" secondItem="kfL-JI-mGG" secondAttribute="trailing" constant="5" id="HND-Lk-es6"/>
+                <constraint firstItem="dZC-om-ump" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="243:320" id="MC6-u1-riS"/>
+                <constraint firstItem="dZC-om-ump" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="e0g-hi-Mdd"/>
+                <constraint firstItem="dZC-om-ump" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="eTS-0p-c6A"/>
+            </constraints>
+            <point key="canvasLocation" x="129.375" y="155"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AppThemeColor">
+            <color red="0.98299998044967651" green="0.81800001859664917" blue="0.14100000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

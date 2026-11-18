@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopupCustomView" customModule="SSP_Reporter" customModuleProvider="target">
+            <connections>
+                <outlet property="btnLeft" destination="TYy-Gf-3Fq" id="Kdx-SK-dx8"/>
+                <outlet property="btnRight" destination="NEk-uJ-0KN" id="Ofv-zY-G45"/>
+                <outlet property="lableTop" destination="no8-tV-pdO" id="QP0-gn-vfe"/>
+                <outlet property="textView" destination="waJ-FD-Dc6" id="X6e-Gv-IsO"/>
+                <outlet property="view" destination="aWF-Db-QUD" id="c64-vD-bOG"/>
+                <outlet property="viewInside" destination="noa-JC-iY6" id="fEt-yk-cDf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="aWF-Db-QUD">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="igM-db-6kv">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="noa-JC-iY6">
+                    <rect key="frame" x="16" y="140" width="288" height="200"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Do you want to submit this dispatch incident?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="waJ-FD-Dc6">
+                            <rect key="frame" x="10" y="30" width="268" height="98"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" systemColor="darkTextColor"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="nVi-Tx-YLn"/>
+                            </connections>
+                        </textView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6bn-Em-iBj">
+                            <rect key="frame" x="10" y="135" width="268" height="45"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYy-Gf-3Fq" customClass="ButtionX" customModule="SSP_Reporter" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="129" height="45"/>
+                                    <color key="backgroundColor" name="AppThemeColor"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                    <state key="normal" title="YES">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnokAction:" destination="-1" eventType="touchUpInside" id="Bjq-WZ-oag"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEk-uJ-0KN" customClass="ButtionX" customModule="SSP_Reporter" customModuleProvider="target">
+                                    <rect key="frame" x="139" y="0.0" width="129" height="45"/>
+                                    <color key="backgroundColor" systemColor="darkTextColor"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                    <state key="normal" title="NO">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnokAction:" destination="-1" eventType="touchUpInside" id="plI-US-0PI"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="CVo-cy-mIN"/>
+                            </constraints>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="no8-tV-pdO">
+                            <rect key="frame" x="0.0" y="0.0" width="288" height="29"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="waJ-FD-Dc6" firstAttribute="top" secondItem="no8-tV-pdO" secondAttribute="bottom" constant="1" id="7aF-dT-PgM"/>
+                        <constraint firstItem="waJ-FD-Dc6" firstAttribute="top" secondItem="noa-JC-iY6" secondAttribute="top" constant="30" id="JGj-lG-3oh"/>
+                        <constraint firstAttribute="trailing" secondItem="waJ-FD-Dc6" secondAttribute="trailing" constant="10" id="JiZ-7k-mh0"/>
+                        <constraint firstItem="6bn-Em-iBj" firstAttribute="centerX" secondItem="waJ-FD-Dc6" secondAttribute="centerX" id="OAa-Z3-d8H"/>
+                        <constraint firstItem="no8-tV-pdO" firstAttribute="top" secondItem="noa-JC-iY6" secondAttribute="top" id="aek-N1-6UZ"/>
+                        <constraint firstItem="6bn-Em-iBj" firstAttribute="top" secondItem="waJ-FD-Dc6" secondAttribute="bottom" constant="7" id="agN-ee-a74"/>
+                        <constraint firstItem="6bn-Em-iBj" firstAttribute="leading" secondItem="waJ-FD-Dc6" secondAttribute="leading" id="gF3-TD-BNG"/>
+                        <constraint firstAttribute="bottom" secondItem="6bn-Em-iBj" secondAttribute="bottom" constant="20" id="kGT-cu-SY2"/>
+                        <constraint firstItem="waJ-FD-Dc6" firstAttribute="centerX" secondItem="noa-JC-iY6" secondAttribute="centerX" id="pQ0-Vp-3RD"/>
+                        <constraint firstItem="waJ-FD-Dc6" firstAttribute="leading" secondItem="noa-JC-iY6" secondAttribute="leading" constant="10" id="wU8-aK-0AO"/>
+                        <constraint firstAttribute="height" constant="200" id="yEG-6G-kue"/>
+                        <constraint firstItem="no8-tV-pdO" firstAttribute="leading" secondItem="noa-JC-iY6" secondAttribute="leading" id="z81-5X-8MU"/>
+                        <constraint firstAttribute="trailing" secondItem="no8-tV-pdO" secondAttribute="trailing" id="zRC-3M-WxG"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="zrD-1j-SQQ"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="igM-db-6kv" firstAttribute="top" secondItem="aWF-Db-QUD" secondAttribute="top" id="3BA-xj-IG6"/>
+                <constraint firstItem="noa-JC-iY6" firstAttribute="centerX" secondItem="aWF-Db-QUD" secondAttribute="centerX" id="Dlo-QU-hGk"/>
+                <constraint firstItem="noa-JC-iY6" firstAttribute="width" secondItem="aWF-Db-QUD" secondAttribute="width" multiplier="0.9" id="Krk-dQ-RhJ"/>
+                <constraint firstItem="zrD-1j-SQQ" firstAttribute="trailing" secondItem="igM-db-6kv" secondAttribute="trailing" id="gIj-F5-FDD"/>
+                <constraint firstItem="noa-JC-iY6" firstAttribute="centerY" secondItem="aWF-Db-QUD" secondAttribute="centerY" id="l3A-l8-tPm"/>
+                <constraint firstItem="igM-db-6kv" firstAttribute="leading" secondItem="zrD-1j-SQQ" secondAttribute="leading" id="tIX-Z8-OlE"/>
+                <constraint firstItem="zrD-1j-SQQ" firstAttribute="bottom" secondItem="igM-db-6kv" secondAttribute="bottom" id="vMW-oJ-WUK"/>
+            </constraints>
+            <point key="canvasLocation" x="138.75" y="96.25"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="NEk-uJ-0KN">
+            <size key="intrinsicContentSize" width="30" height="32"/>
+        </designable>
+        <designable name="TYy-Gf-3Fq">
+            <size key="intrinsicContentSize" width="30" height="32"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="AppThemeColor">
+            <color red="0.98299998044967651" green="0.81800001859664917" blue="0.14100000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

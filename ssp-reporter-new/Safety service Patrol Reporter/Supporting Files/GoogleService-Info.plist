@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>798416793517-0j4ospncpgf8qq7apmifeu9705vrco5e.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.798416793517-0j4ospncpgf8qq7apmifeu9705vrco5e</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>798416793517-qgaj5bcsr61hhluero6gc3kqhuqimv27.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDMLatptZnVlXJ-9bzhwPDme4y6RxZ8UG4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>798416793517</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ATIMSReport</string>
+	<key>PROJECT_ID</key>
+	<string>atims-b2112</string>
+	<key>STORAGE_BUCKET</key>
+	<string>atims-b2112.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:798416793517:ios:d68bc56980b4653b17fb24</string>
+	<key>DATABASE_URL</key>
+	<string>https://atims-b2112.firebaseio.com</string>
+</dict>
+</plist>
